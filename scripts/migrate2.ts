@@ -1,8 +1,8 @@
 import { ethers } from "hardhat";
 
 async function main() {
-    const Migration = await ethers.getContractFactory("Migration");
-    const migration = Migration.attach("0x524042c0C330F8db80adcD671965445366C48cb5");
+    const Migration = await ethers.getContractFactory("Migration2");
+    const migration = Migration.attach("0x7d9ed01Ad0bbb047608E9De408995a429188bd58");
     await migration.deployed();
     
     for (let i = 0; i < 20; i += 1) {
