@@ -7,7 +7,7 @@ contract ShigorHouseDeeds is ERC721GEnumerable {
     event SetName(string name_);
     event SetSymbol(string symbol_);
 
-    constructor() ERC721GEnumerable("Shigor House Deeds", "HOUSEDEED", "https://app-server.gaiaprotocol.com/metadata/standard/shigor-house-deeds/") {}
+    constructor() ERC721GEnumerable("Shigor House Deeds", "HOUSEDEED", "https://app-server.gaia.cc/metadata/standard/shigor-house-deeds/") {}
 
     function setName(string calldata name_) external {
         require(hasRole(METADATA_OPERATOR_ROLE, msg.sender), "ERC721G: must have metadata operator role to setName");
